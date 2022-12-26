@@ -1,0 +1,43 @@
+
+body{   
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        border:2px;
+        height:98vh;
+        background: hsl(212, 45%, 89%);
+        
+        
+    }
+
+.zaheer{
+        
+        display:flex;
+        flex-direction:column;
+        justify-content: center;
+        height:500px;
+        width:330px;
+        align-items: center;
+        padding:9px;
+        border-radius: 10px;
+        background-color: hsl(0, 0%, 100%)
+     
+    
+    }
+
+    h2{
+        display:flex;
+        justify-content: center;
+        font-family: 'outfit';
+        font-weight: 700;
+        text-align: center;
+    }
+    
+   
+    p{
+        display: flex;
+        font-size: 15px;
+        font-family: 'Outfit';
+        font-weight: 400;
+
+    }

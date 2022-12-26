@@ -1,0 +1,11 @@
+ .flex1{
+	display:flex;
+	border-radius: 5px;
+	flex-direction: row;
+	justify-content: center;
+ }
+
+.fitem{
+	
+	border-radius:5px;
+}
