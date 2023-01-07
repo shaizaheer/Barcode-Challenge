@@ -1,0 +1,214 @@
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    --button-hover-clr: hsl(156, 42%, 18%);
+
+}
+
+* {
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    min-height: 100vh;
+    font-size: 75%;
+    background-color: var(--cream);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.main-wrap {
+    max-width: 45rem;
+    display: flex;
+    background-color: var(--White);
+    border-radius: 10px;
+    /* flex-wrap: wrap; */
+    /* while shrinking to 423x850 image not visible */
+
+
+}
+
+.main-wrap> :nth-child(1) {
+    background-image: url(./image-desk.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px 0px 0px 10px;
+
+}
+
+.main-wrap> :nth-child(2) {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    flex: 1 1 50%;
+
+}
+
+.main-wrap>div {
+    display: flex;
+    flex: 1 1 50%;
+
+}
+
+.main-wrap>div> :nth-child(1) {
+    font-size: 1rem;
+    color: var(--Dark-grayish-blue);
+    font-family: 'Montserrat';
+    
+}
+
+.main-wrap>div> :nth-child(2) {
+    font-size: 3rem;
+    font-family: 'Fraunces';
+    font-weight: 500;
+    opacity: 0.8;
+
+}
+
+.main-wrap>div>p {
+    font-size: 1.1rem;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+    
+}
+
+.main-wrap>div> :nth-child(4) {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1.5rem;
+
+}
+
+.main-wrap>div> :nth-child(4)> :nth-child(1) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    font-size: 2rem;
+    font-family: 'Fraunces';
+    font-weight: 500;
+    color: var(--dark-cyan);
+
+}
+
+.main-wrap>div> :nth-child(4)> :nth-child(2) {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: var(--Dark-grayish-blue);
+    opacity: 0.5;
+    font-size: 1rem;
+    text-decoration: line-through;
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.main-wrap>div> :nth-child(5) {
+    background-color: var(--dark-cyan);
+    color: white;
+    font-size: 1rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
+    border: none;
+    outline: none;
+    padding: 0.9rem;
+    border-radius: 0.8rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition-property: transform;
+    transition-duration: 0.1s;
+    
+}
+
+.main-wrap>div> :nth-child(5):hover
+    {
+    background-color: rgb(1, 80, 80);
+}
+
+.buttoncart{
+    transform: scale(1);
+    
+}
+.buttoncart:active::before {
+    transform: rotate(-90deg);
+}
+.buttoncart:active {
+    transform: scale(0.96);
+}
+@media screen and (max-width:500px) {
+    .main-wrap {
+        margin:15px;
+        margin-top: 2rem;
+        flex-direction: column;
+        height: 92vh;
+        
+    }
+
+    .main-wrap> :nth-child(1) {
+        display: flex;
+        flex-direction:column;
+        background-image: url(./image-mob.jpg);
+        border-radius: 10px 10px 0px 0px;
+             
+      
+    }
+    .main-wrap> :nth-child(2) {
+        flex-direction: column;
+        padding: 1.8rem;
+        flex: 1 1 50%;
+        
+    }
+.main-wrap>div> :nth-child(1) {
+        font-size: 1.4rem;
+    }   
+    .main-wrap> :nth-child(1) {
+        background-position: center;
+        height: auto;
+        
+}
+.main-wrap>div> :nth-child(5) {
+    font-size: 1.5rem;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    border: none;
+    outline: none;
+    padding: 1.6rem;
+    border-radius: 1rem;    
+
+}
+    
+.main-wrap>div> :nth-child(4)> :nth-child(2) {
+        font-weight: 400;
+        color: var(--Dark-grayish-blue);
+        font-size: 1.2rem;
+        
+    }
+    .main-wrap>div> :nth-child(4)> :nth-child(1) {
+       font-size: 3rem;
+       color: var(--dark-cyan);
+       
+    }
+    .main-wrap>div> :nth-child(2) {
+        font-size: 3rem;
+        font-weight: 700;
+        
+    }
+    .main-wrap>div>p {
+        font-size: 1.5rem;
+        font-weight: 00;
+        
+    }
+   
+}
